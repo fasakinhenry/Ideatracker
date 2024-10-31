@@ -64,6 +64,11 @@ export function Home() {
           ))}
         </ul>
       </section>
+      {user.current && (
+        <button type='button' onClick={user.logout}>
+          Logout
+        </button>
+      )}
     </>
   );
 }
