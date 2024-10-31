@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import { useUser } from '../lib/context/user';
-import { useIdeas } from '../lib/context/ideas';
+import { useState } from "react";
+import { useUser } from "../lib/context/user";
+import { useIdeas } from "../lib/context/ideas";
 
 export function Home() {
   const user = useUser();
   const ideas = useIdeas();
 
-  const [title, setTitle] = useState('');
-  const [description, setDescription] = useState('');
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
 
   return (
     <>
@@ -17,22 +17,22 @@ export function Home() {
           <h2>Submit Idea</h2>
           <form>
             <input
-              type='text'
-              placeholder='Title'
+              type="text"
+              placeholder="Title"
               value={title}
               onChange={(event) => {
                 setTitle(event.target.value);
               }}
             />
             <textarea
-              placeholder='Description'
+              placeholder="Description"
               value={description}
               onChange={(event) => {
                 setDescription(event.target.value);
               }}
             />
             <button
-              type='button'
+              type="button"
               onClick={() =>
                 ideas.add({ userId: user.current.$id, title, description })
               }
@@ -55,7 +55,7 @@ export function Home() {
               <p>{idea.description}</p>
               {/* Show the remove button to idea owner. */}
               {user.current && user.current.$id === idea.userId && (
-                <button type='button' onClick={() => ideas.remove(idea.$id)}>
+                <button type="button" onClick={() => ideas.remove(idea.$id)}>
                   Remove
                 </button>
               )}
