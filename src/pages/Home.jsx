@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useUser } from "../lib/context/user";
 import { useIdeas } from "../lib/context/ideas";
+import { Link } from "react-router-dom";
 
 export function Home() {
   const user = useUser();
