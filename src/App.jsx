@@ -1,13 +1,14 @@
-import { Home } from "./pages/Home";
-import { UserProvider } from "./lib/context/user";
+import { Login } from './pages/Login';
+import { Home } from './pages/Home';
+import { UserProvider } from './lib/context/user';
 
 function App() {
-  const isLoginPage = window.location.pathname === "/login";
+  const isLoginPage = window.location.pathname === '/login';
 
   return (
     <div>
       <UserProvider>
-        <main>Home page</main>
+        <main>{isLoginPage ? <Login /> : <Home />}</main>
       </UserProvider>
     </div>
   );
