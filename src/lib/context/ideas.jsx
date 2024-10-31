@@ -1,6 +1,6 @@
-import { createContext, useContext, useEffect, useState } from "react";
-import { databases } from "../appwrite";
-import { ID, Query } from "appwrite";
+import { createContext, useContext, useEffect, useState } from 'react';
+import { databases } from '../appwrite';
+import { ID, Query } from 'appwrite';
 
 export const IDEAS_DATABASE_ID = import.meta.env.VITE_IDEAS_DATABASE_ID; // Replace with your database ID
 export const IDEAS_COLLECTION_ID = import.meta.env.VITE_IDEAS_COLLECTION_ID; // Replace with your collection ID
@@ -34,7 +34,7 @@ export function IdeasProvider(props) {
     const response = await databases.listDocuments(
       IDEAS_DATABASE_ID,
       IDEAS_COLLECTION_ID,
-      [Query.orderDesc("$createdAt"), Query.limit(10)]
+      [Query.orderDesc('$createdAt'), Query.limit(10)]
     );
     setIdeas(response.documents);
   }
