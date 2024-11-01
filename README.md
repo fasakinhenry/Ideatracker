@@ -1,5 +1,7 @@
 # IdeaTracker
 
+> [Check it out here](https://ideatracker.vercel.app)
+
 ## Introduction
 
 IdeaTracker is a web application built with React and Vite. It allows users to track and manage their ideas efficiently. The application supports user authentication, idea creation, editing, and deletion, and provides a responsive design for a seamless user experience.
@@ -48,3 +50,5 @@ To start the development server with hot module replacement (HMR):
 ```sh
 npm run dev -- --port 3000
 ```
+
+Made with 💖 by Fasakin Henry
