@@ -52,3 +52,5 @@ npm run dev -- --port 3000
 ```
 
 Made with 💖 by Fasakin Henry
+
+> Copyright 2024
