@@ -1,5 +1,7 @@
 # IdeaTracker
 
+![Ideatracker](https://socialify.git.ci/fasakinhenry/Ideatracker/image?description=1&font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Dark)
+
 > [Check it out here](https://ideatracker.vercel.app)
 
 ## Introduction
